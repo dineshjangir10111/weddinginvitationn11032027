@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dinesh & Nikita | Wedding Invitation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+
+    <div id="preloader">
+
+        <div class="ganesh">ॐ</div>
+
+        <h2>॥ श्री गणेशाय नमः ॥</h2>
+
+        <p>Loading Our Wedding...</p>
+
+    </div>
+
+
+    <!-- ================= MUSIC ================= -->
+
+    <audio id="weddingMusic" loop>
+        <source src="music/wedding.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button">
+        🔊
+    </button>
+
+
+    <!-- ================= PETALS ================= -->
+
+    <div class="petals"></div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                Together With Their Families
+            </p>
+
+            <h1>
+                Dinesh
+                <span>&</span>
+                Nikita
+            </h1>
+
+            <p class="invite-text">
+                Request the honour of your presence
+                at their wedding celebration
+            </p>
+
+            <div class="ornament">
+                ❖ ❖ ❖
+            </div>
+
+            <p class="wedding-date">
+                11 March 2027
+            </p>
+
+            <button class="gold-button" onclick="scrollToSection('countdown')">
+                Open Invitation
+            </button>
+
+        </div>
+
+        <div class="scroll-down">
+            ↓
+        </div>
+
+    </section>
+
+
+    <!-- ================= COUNTDOWN ================= -->
+
+    <section id="countdown" class="section">
+
+        <p class="section-small">
+            SAVE THE DATE
+        </p>
+
+        <h2 class="section-title">
+            Our Wedding Day
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="section-text">
+            The countdown to our beautiful beginning has started.
+        </p>
+
+
+        <div class="countdown-container">
+
+            <div class="count-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div class="count-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="count-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div class="count-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COUPLE ================= -->
+
+    <section class="section couple-section">
+
+        <p class="section-small">
+            THE HAPPY COUPLE
+        </p>
+
+        <h2 class="section-title">
+            Two Hearts, One Journey
+        </h2>
+
+        <div class="gold-line"></div>
+
+
+        <div class="couple-container">
+
+            <!-- Groom -->
+
+            <div class="person-card">
+
+                <div class="photo-frame">
+
+                    <img src="images/groom.jpeg" alt="Groom">
+
+                </div>
+
+                <h3>Dinesh</h3>
+
+                <p>Groom</p>
+
+            </div>
+
+
+            <div class="heart">
+                ♥
+            </div>
+
+
+            <!-- Bride -->
+
+            <div class="person-card">
+
+                <div class="photo-frame">
+
+                    <img src="images/bride.jpeg" alt="Bride">
+
+                </div>
+
+                <h3>Nikita</h3>
+
+                <p>Bride</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STORY ================= -->
+
+    <section class="story-section">
+
+        <div class="story-overlay"></div>
+
+        <div class="story-content">
+
+            <p class="section-small">
+                OUR STORY
+            </p>
+
+            <h2>
+                A Beautiful Beginning
+            </h2>
+
+            <div class="gold-line"></div>
+
+            <p>
+                Two souls met, two hearts connected,
+                and now two families come together
+                to celebrate a beautiful new journey.
+            </p>
+
+            <p>
+                With the blessings of our parents and loved ones,
+                we invite you to be a part of our special day.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WEDDING EVENTS ================= -->
+
+    <section class="section">
+
+        <p class="section-small">
+            JOIN US
+        </p>
+
+        <h2 class="section-title">
+            Wedding Events
+        </h2>
+
+        <div class="gold-line"></div>
+
+
+        <div class="events-container">
+
+            <!-- Event 1 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🌸
+                </div>
+
+                <h3>Mehendi</h3>
+
+                <p class="event-date">
+                    10 March 2027
+                </p>
+
+                <p>
+                    6:00 PM onwards
+                </p>
+
+                <p>
+                    Ladnun, Rajasthan
+                </p>
+
+            </div>
+
+
+            <!-- Event 2 -->
+
+            <div class="event-card featured">
+
+                <div class="event-icon">
+                    💍
+                </div>
+
+                <h3>Wedding Ceremony</h3>
+
+                <p class="event-date">
+                    11 March 2027
+                </p>
+
+                <p>
+                    7:00 PM onwards
+                </p>
+
+                <p>
+                    Ladnun, Rajasthan
+                </p>
+
+            </div>
+
+
+            <!-- Event 3 -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🎉
+                </div>
+
+                <h3>Barat</h3>
+
+                <p class="event-date">
+                    11 March 2027
+                </p>
+
+                <p>
+                    5:30 PM onwards
+                </p>
+
+                <p>
+                    Ladnun To Rajaldesar
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="section gallery-section">
+
+        <p class="section-small">
+            MEMORIES
+        </p>
+
+        <h2 class="section-title">
+            Our Gallery
+        </h2>
+
+        <div class="gold-line"></div>
+
+
+        <div class="gallery">
+
+            <img src="images/photo1.jpeg" alt="Wedding Photo">
+
+            <img src="images/photo2.jpeg"Wedding Photo">
+
+            <img src="images/photo3.jpg" alt="Wedding Photo">
+
+            <img src="images/groom.jpeg" alt="Groom">
+
+            <img src="images/bride.jpeg" alt="Bride">
+        
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VENUE ================= -->
+
+    <section class="venue-section">
+
+        <div class="venue-content">
+
+            <p class="section-small">
+                THE VENUE
+            </p>
+
+            <h2>
+                Royal Wedding Venue
+            </h2>
+
+            <div class="gold-line"></div>
+
+            <p>
+                Ladnun Rajasthan
+            </p>
+
+            <p>
+                9 March 2027
+            </p>
+
+            <a
+                href="https://maps.app.goo.gl/aCJVUdCapgj6K7qg9"
+                target="_blank"
+                class="gold-button">
+
+                📍 View Location
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RSVP ================= -->
+
+    <section class="section rsvp-section">
+
+        <p class="section-small">
+           Click to RSVP
+        </p>
+
+        <h2 class="section-title">
+            Will You Join Us?
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p class="section-text">
+            We would love to celebrate our special day with you.
+        </p>
+
+
+        <div class="rsvp-buttons">
+
+            <a
+                href="https://wa.me/9057124964?text=Hello%20Dinesh%20%26%20Nikita,%20I%20will%20be%20joining%20your%20wedding."
+                target="_blank"
+                class="whatsapp-button">
+
+                💬 Please Reply on WhatsApp
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+            Dinesh & Nikita
+        </h2>
+
+        <p>
+            Forever begins here ❤️
+        </p>
+
+        <div class="footer-symbol">
+            ❖
+        </div>
+
+        <p class="copyright">
+            Made with love for our special day
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

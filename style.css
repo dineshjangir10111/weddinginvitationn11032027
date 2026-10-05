@@ -1,0 +1,1164 @@
+/* =====================================================
+   ROYAL WEDDING WEBSITE
+   STYLE.CSS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff8e7;
+    color: #3b1717;
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --royal-red: #7a0000;
+
+    --dark-red: #3d0505;
+
+    --gold: #d4af37;
+
+    --light-gold: #f3d98b;
+
+    --cream: #fff8e7;
+
+    --white: #ffffff;
+
+}
+
+
+/* =====================================================
+   PRELOADER
+===================================================== */
+
+#preloader {
+
+    position: fixed;
+
+    width: 100%;
+
+    height: 100vh;
+
+    background:
+        radial-gradient(circle, #7a0000, #2b0202);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    z-index: 99999;
+
+    transition: 1s;
+
+}
+
+#preloader.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+.ganesh {
+
+    font-size: 70px;
+
+    color: var(--gold);
+
+    animation: pulse 2s infinite;
+
+}
+
+#preloader h2 {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--gold);
+
+    margin: 20px 0;
+
+}
+
+#preloader p {
+
+    font-size: 14px;
+
+}
+
+
+@keyframes pulse {
+
+    0%, 100% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+}
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-button {
+
+    position: fixed;
+
+    right: 20px;
+
+    top: 20px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: 2px solid var(--gold);
+
+    background: var(--dark-red);
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    background:
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=90")
+        center/cover;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(40,0,0,.70),
+            rgba(60,0,0,.75)
+        );
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 30px;
+
+    animation: heroEnter 2s ease;
+
+}
+
+
+.small-title {
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: var(--light-gold);
+
+}
+
+
+.hero h1 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(70px, 10vw, 130px);
+
+    color: var(--gold);
+
+    font-weight: 400;
+
+    margin: 15px 0;
+
+    text-shadow: 0 5px 20px black;
+
+}
+
+
+.hero h1 span {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: .4em;
+
+    color: white;
+
+}
+
+
+.invite-text {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+.ornament {
+
+    color: var(--gold);
+
+    margin: 25px 0;
+
+    letter-spacing: 10px;
+
+}
+
+
+.wedding-date {
+
+    font-family: "Cinzel", serif;
+
+    font-size: 22px;
+
+    letter-spacing: 5px;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+}
+
+
+@keyframes heroEnter {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(50px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.gold-button {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border: 1px solid var(--gold);
+
+    background:
+        linear-gradient(
+            135deg,
+            #d4af37,
+            #f5df8c,
+            #b8860b
+        );
+
+    color: #3d0505;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.gold-button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px rgba(212,175,55,.4);
+
+}
+
+
+.scroll-down {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    font-size: 30px;
+
+    color: var(--gold);
+
+    animation: bounce 2s infinite;
+
+}
+
+
+@keyframes bounce {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(10px);
+
+    }
+
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+
+    padding: 100px 7%;
+
+    text-align: center;
+
+}
+
+
+.section-small {
+
+    color: #a07913;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.section-title {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--royal-red);
+
+    font-size: clamp(30px, 5vw, 50px);
+
+    margin: 10px 0;
+
+}
+
+
+.gold-line {
+
+    width: 100px;
+
+    height: 2px;
+
+    background: var(--gold);
+
+    margin: 20px auto 30px;
+
+}
+
+
+.section-text {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #666;
+
+}
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 45px;
+
+}
+
+
+.count-box {
+
+    width: 130px;
+
+    height: 130px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #7a0000,
+            #3d0505
+        );
+
+    border: 2px solid var(--gold);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 15px 35px rgba(80,0,0,.25);
+
+}
+
+
+.count-box span {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--gold);
+
+    font-size: 40px;
+
+}
+
+
+.count-box small {
+
+    color: white;
+
+    letter-spacing: 2px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =====================================================
+   COUPLE
+===================================================== */
+
+.couple-section {
+
+    background: #fff;
+
+}
+
+
+.couple-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+
+}
+
+
+.person-card {
+
+    text-align: center;
+
+}
+
+
+.photo-frame {
+
+    width: 280px;
+
+    height: 350px;
+
+    padding: 8px;
+
+    border: 2px solid var(--gold);
+
+    border-radius: 150px 150px 20px 20px;
+
+    background: var(--cream);
+
+}
+
+
+.photo-frame img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 140px 140px 15px 15px;
+
+}
+
+
+.person-card h3 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 45px;
+
+    color: var(--royal-red);
+
+    margin-top: 15px;
+
+}
+
+
+.person-card p {
+
+    color: #777;
+
+}
+
+
+.heart {
+
+    font-size: 60px;
+
+    color: var(--royal-red);
+
+    animation: heartBeat 1.5s infinite;
+
+}
+
+
+@keyframes heartBeat {
+
+    50% {
+
+        transform: scale(1.25);
+
+    }
+
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.story-section {
+
+    position: relative;
+
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2000&q=90")
+        center/cover fixed;
+
+}
+
+
+.story-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(50,0,0,.75);
+
+}
+
+
+.story-content {
+
+    position: relative;
+
+    max-width: 750px;
+
+    padding: 30px;
+
+}
+
+
+.story-content h2 {
+
+    font-family: "Great Vibes", cursive;
+
+    color: var(--gold);
+
+    font-size: 70px;
+
+    font-weight: 400;
+
+}
+
+
+.story-content p {
+
+    line-height: 2;
+
+    margin: 15px 0;
+
+}
+
+
+/* =====================================================
+   EVENTS
+===================================================== */
+
+.events-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+
+}
+
+
+.event-card {
+
+    width: 280px;
+
+    padding: 35px 25px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid #eee;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+
+.event-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.event-card.featured {
+
+    background:
+        linear-gradient(
+            145deg,
+            #7a0000,
+            #3d0505
+        );
+
+    color: white;
+
+    border: 2px solid var(--gold);
+
+}
+
+
+.event-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.event-card h3 {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--royal-red);
+
+    margin-bottom: 15px;
+
+}
+
+
+.event-card.featured h3 {
+
+    color: var(--gold);
+
+}
+
+
+.event-date {
+
+    color: #a07913;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery-section {
+
+    background: #fff;
+
+}
+
+
+.gallery {
+
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.gallery img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: .4s;
+
+    cursor: pointer;
+
+}
+
+
+.gallery img:hover {
+
+    transform: scale(1.04);
+
+}
+
+
+/* =====================================================
+   VENUE
+===================================================== */
+
+.venue-section {
+
+    min-height: 500px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(50,0,0,.8),
+            rgba(50,0,0,.8)
+        ),
+        url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=90")
+        center/cover;
+
+}
+
+
+.venue-content h2 {
+
+    font-family: "Cinzel", serif;
+
+    color: var(--gold);
+
+    font-size: 45px;
+
+    margin: 15px 0;
+
+}
+
+
+/* =====================================================
+   RSVP
+===================================================== */
+
+.rsvp-section {
+
+    background: var(--cream);
+
+}
+
+
+.whatsapp-button {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    background: #25D366;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.whatsapp-button:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(37,211,102,.3);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #280202;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+}
+
+
+footer h2 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 55px;
+
+    color: var(--gold);
+
+}
+
+
+.footer-symbol {
+
+    color: var(--gold);
+
+    font-size: 25px;
+
+    margin: 20px;
+
+}
+
+
+.copyright {
+
+    font-size: 12px;
+
+    color: #aaa;
+
+}
+
+
+/* =====================================================
+   FLOWING PETALS
+===================================================== */
+
+.petal {
+
+    position: fixed;
+
+    top: -50px;
+
+    z-index: 999;
+
+    pointer-events: none;
+
+    animation: falling linear forwards;
+
+}
+
+
+@keyframes falling {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px) {
+
+    .hero h1 {
+
+        font-size: 75px;
+
+    }
+
+
+    .invite-text {
+
+        font-size: 15px;
+
+    }
+
+
+    .count-box {
+
+        width: 100px;
+
+        height: 100px;
+
+    }
+
+
+    .count-box span {
+
+        font-size: 30px;
+
+    }
+
+
+    .photo-frame {
+
+        width: 240px;
+
+        height: 300px;
+
+    }
+
+
+    .heart {
+
+        width: 100%;
+
+    }
+
+
+    .story-content h2 {
+
+        font-size: 50px;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .gallery img {
+
+        height: 180px;
+
+    }
+
+}
+
+
+@media(max-width:480px) {
+
+    .section {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 60px;
+
+    }
+
+
+    .wedding-date {
+
+        font-size: 15px;
+
+    }
+
+
+    .countdown-container {
+
+        gap: 10px;
+
+    }
+
+
+    .count-box {
+
+        width: 75px;
+
+        height: 85px;
+
+    }
+
+
+    .count-box span {
+
+        font-size: 24px;
+
+    }
+
+
+    .count-box small {
+
+        font-size: 9px;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .gallery img {
+
+        height: 250px;
+
+    }
+
+}
